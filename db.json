@@ -1,0 +1,10 @@
+{
+  "aliens": [
+    {
+      "id": 1,
+      "nombre": "Klaatu",
+      "planeta": "K2-18b",
+      "peligrosidad": "Bajo"
+    }
+  ]
+}

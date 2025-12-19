@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Mi web dockerizada</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Aliens</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Mi primera web en Docker</h1>
-  <p id="mensaje"></p>
-  <button onclick="mostrarMensaje()">Haz clic</button>
+  <main class="container">
+    
+    
+    <section class="panel">
+      <h2>Nuevo Alien</h2>
+      <form id="alienForm">
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="text" id="planeta" placeholder="Planeta de origen" required />
+        <select id="peligrosidad" required>
+          <option value="">Nivel de Peligrosidad</option>
+          <option value="Bajo">Bajo</option>
+          <option value="Alto">Alto</option>
+        </select>
+        <button type="submit">Registrar</button>
+      </form>
+    </section>
+
+    
+    <section class="panel">
+      <h2>Tarjetas Aliens</h2>
+      <div id="alienList" class="cards"></div>
+    </section>
+
+  </main>
 
   <script src="app.js"></script>
 </body>
